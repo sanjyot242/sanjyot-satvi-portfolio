@@ -6,10 +6,11 @@ export default {
       fontFamily: {
         bebas: ['BebasNeue'],
         inter: ['Inter'],
+        manrope: ['Manrope'],
       },
       colors: {
         neturalOffWhite: '#C7C7C7',
-        secondary: '#9333EA',
+        primary: '#D3E97A',
         accent: '#F59E0B',
         // Add more colors as needed
       },

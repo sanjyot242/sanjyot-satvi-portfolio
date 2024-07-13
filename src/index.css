@@ -15,3 +15,10 @@
   font-weight: medium;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
