@@ -8,24 +8,26 @@ export const data = [
     githubLink: 'www.github.com',
   },
   {
-    title: 'This is title second',
+    title: 'Kubernetes-Spark-Cassandra Data Processing Pipeline',
+    imageurl: '/images/architecture.jpeg',
     description:
-      'Tempor incididunt laborum veniam ad incididunt duis aute nisi cupidatat commodo aliquip magna. Sunt in cillum aute nostrud ipsum culpa irure veniam. Amet voluptate laborum est eu sit Lorem velit. Excepteur ea commodo ea dolore eiusmod ea sint nulla velit veniam commodo culpa magna. Dolor voluptate nisi cupidatat sint amet deserunt aliquip. Laboris excepteur do est ea mollit consequat et fugiat sunt ea non.',
+      'Developed a data pipeline for airline performance analysis using Kubernetes, Apache Spark, and Cassandra. Implemented ETL processes to convert .parquet files into Spark DataFrames for efficient data handling. Configured Kubernetes clusters and deployed applications using Helm charts. Visualized data with Python and Matplotlib to showcase insights. Optimized resource management in a cloud-native environment.',
     link: 'www.google.com',
     githubLink: 'www.github.com',
   },
   {
-    imageurl: '/images/ecommerce.png',
-    title: 'This is title thrid',
+    imageurl: '/images/ODRS.png',
+    title: 'Optimal Delivery Route System Using TSP Algorithms',
     description:
-      'Tempor incididunt laborum veniam ad incididunt duis aute nisi cupidatat commodo aliquip magna. Sunt in cillum aute nostrud ipsum culpa irure veniam. Amet voluptate laborum est eu sit Lorem velit. Excepteur ea commodo ea dolore eiusmod ea sint nulla velit veniam commodo culpa magna. Dolor voluptate nisi cupidatat sint amet deserunt aliquip. Laboris excepteur do est ea mollit consequat et fugiat sunt ea non.',
+      'Developed a full-stack project, Optimal Delivery Route System, featuring a React and Tailwind frontend and a Flask backend. The system allows users to add locations on a map via search and query the backend to determine the optimal delivery route using algorithms like Ant Colony and Nearest Neighbor. The optimal route is then plotted using Mapbox and React Leaflet for visual representation.',
     link: 'www.google.com',
     githubLink: 'www.github.com',
   },
   {
-    title: 'This is title fourth',
+    imageurl: '/images/algo-analysis.JPG',
+    title: 'Algorithm-Efficiency-Analyzer-Tool',
     description:
-      'Tempor incididunt laborum veniam ad incididunt duis aute nisi cupidatat commodo aliquip magna. Sunt in cillum aute nostrud ipsum culpa irure veniam. Amet voluptate laborum est eu sit Lorem velit. Excepteur ea commodo ea dolore eiusmod ea sint nulla velit veniam commodo culpa magna. Dolor voluptate nisi cupidatat sint amet deserunt aliquip. Laboris excepteur do est ea mollit consequat et fugiat sunt ea non.',
+      'Developed an Algorithm Efficiency Analyzer tool that enables users to input a list of numbers, select a sorting algorithm, and visualize its efficiency through a GUI interface. Leveraged React for the frontend, FastAPI for the backend, and used react-chartjs-2 and Chart.js for visualizing the sorting algorithms performance.',
     link: 'www.google.com',
     githubLink: 'www.github.com',
   },
