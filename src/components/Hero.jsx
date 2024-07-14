@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <div className='w-[1440px] h-[0px] border border-zinc-700'></div>
+      <div className='w-full h-[2px] border border-zinc-700'></div>
     </>
   );
 }
