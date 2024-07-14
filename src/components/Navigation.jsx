@@ -8,15 +8,16 @@ export const Navigation = () => {
       </div>
       <div className='justify-center items-center gap-8 flex'>
         <div className='justify-start items-start gap-8 flex'>
-          <div className='text-neturalOffWhite text-base font-medium font-inter leading-[24px]'>
-            Work
-          </div>
-          <div className='text-neturalOffWhite text-base  font-inter leading-[24px]'>
-            About
-          </div>
-          <div className='text-neturalOffWhite text-base  font-inter leading-[24px]'>
-            Contact
-          </div>
+          <a
+            href='#projects'
+            className='text-neturalOffWhite text-base font-medium font-inter leading-[24px]'>
+            Projects
+          </a>
+          <a
+            href='#experience'
+            className='text-neturalOffWhite text-base  font-inter leading-[24px]'>
+            Experience
+          </a>
         </div>
       </div>
     </div>

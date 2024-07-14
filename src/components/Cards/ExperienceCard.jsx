@@ -13,17 +13,17 @@ const ExperienceCard = ({
         <img
           src={logo}
           alt={`${company} logo`}
-          className='h-10 w-10 rounded-full mr-4'
+          className='h-14 w-14 rounded-full mr-4'
         />
         <div>
           <h3 className='text-primary font-bold text-lg'>{role}</h3>
-          <p className='text-sm'>{company}</p>
-          <p className='text-xs'>{duration}</p>
+          <p className='text-base'>{company}</p>
+          <p className='text-base  '>{duration}</p>
         </div>
       </div>
       <ul className='list-disc list-inside space-y-2'>
         {responsibilities.map((responsibility, index) => (
-          <li className='text-[14px]' key={index}>
+          <li className='text-[13px]' key={index}>
             {responsibility}
           </li>
         ))}

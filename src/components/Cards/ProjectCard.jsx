@@ -1,7 +1,7 @@
 export default function ProjectCard({ item }) {
   return (
     <div className='flex flex-col md:flex-row md:gap-8 justify-center my-8'>
-      <div className='md:w-1/2 bg-imagebackground rounded-xl flex justify-center items-center p-7 md:p-14'>
+      <div className='md:w-1/2 bg-imagebackground rounded-xl flex justify-center items-center p-7 md:p-14 border-t-8 border-primary'>
         <img
           className='w-[350px] md:w-[486px] h-[180px] md:h-[300px] rounded-xl border-2 border-black'
           src={item.imageurl}
@@ -16,20 +16,25 @@ export default function ProjectCard({ item }) {
           {item.description}
         </p>
         <div className='flex-row inline-flex gap-6 mt-6'>
+          {item.link ? (
+            <a
+              href={item.link}
+              className='text-primary uppercase justify-start items-start gap-1 inline-flex underline'>
+              <span>Live Demo</span>
+              <div className='w-6 h-6 flex items-center justify-center'>
+                <img
+                  src='/images/arrow-green.svg'
+                  alt='arrow'
+                  className='h-6 w-6 text-primary'
+                />
+              </div>
+            </a>
+          ) : (
+            ''
+          )}
+
           <a
-            href='#'
-            className='text-primary uppercase justify-start items-start gap-1 inline-flex underline'>
-            <span>Live Demo</span>
-            <div className='w-6 h-6 flex items-center justify-center'>
-              <img
-                src='/images/arrow-green.svg'
-                alt='arrow'
-                className='h-6 w-6 text-primary'
-              />
-            </div>
-          </a>
-          <a
-            href='#'
+            href={item.githhubLink}
             className='text-primary uppercase justify-start items-start gap-1 inline-flex underline'>
             <span> See on Github</span>
             <div className='w-6 h-6 flex items-center justify-center'>
