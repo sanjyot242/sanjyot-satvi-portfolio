@@ -29,8 +29,10 @@ export const Navigation = () => {
 
       {/* hamburger menu */}
       <button
+        const
+        hiddenClass={menuOpen ? 'hidden' : ''}
         onClick={toggleMenu}
-        className='space-y-1 group md:hidden relative z-50'>
+        className={'space-y-1 group md:hidden relative z-50' + hiddenClass}>
         <div className='w-6 h-1 bg-white'></div>
         <div className='w-6 h-1 bg-white'></div>
         <div className='w-6 h-1 bg-white'></div>
