@@ -1,4 +1,6 @@
+import { useRef } from 'react';
 import ExperienceCard from './Cards/ExperienceCard';
+import { motion, useInView } from 'framer-motion';
 
 const experiences = [
   {
@@ -25,10 +27,22 @@ const experiences = [
   // Add more experiences as needed
 ];
 
-export default function Experience({ item }) {
+export default function Experience({}) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <>
-      <section id='experience' className='md:ml-20 px-8 md:mr-20  mb-20'>
+      <motion.section
+        variants={{
+          hidden: { x: -100, opacity: 0 },
+          visible: { x: 0, opacity: 1 },
+        }}
+        ref={ref}
+        initial='hidden'
+        animate={isInView ? 'visible' : {}}
+        transition={{ duration: 0.5, staggerChildren: 0.3 }}
+        id='experience'
+        className='md:ml-20 px-8 md:mr-20  mb-20'>
         <div className='flex flex-col gap-3 md:gap-2  mt-16 md:mt-20'>
           <div className='text-white font-bebas font-normal text-[43px] leading-[43px] md:text-[76px] md:leading-[76px] '>
             My Experience
@@ -39,7 +53,7 @@ export default function Experience({ item }) {
             <ExperienceCard key={index} {...experience} />
           ))}
         </div>
-      </section>
+      </motion.section>
       <div className='w-full h-[2px] border border-zinc-700'></div>
     </>
   );

@@ -18,7 +18,7 @@ const SkillsAndTools = () => {
         <div className='text-white font-bebas font-normal text-[43px] leading-[43px] md:text-[76px] md:leading-[76px] '>
           Skills and Tools
         </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='grid grid-cols-3  gap-4 sm:gap-6 md:gap-8'>
           <div>
             {column1.map((skill, index) => (
               <div key={index} className='flex items-center mb-2'>

@@ -1,17 +1,45 @@
+import { motion } from 'framer-motion';
+
 export default function Hero() {
   return (
     <>
       <section className='bg-neutral-950 flex flex-col md:flex-row items-center justify-between w-full h-[700px]  px-8 gap-2 md:gap-16 space-y-4  mb-20'>
-        <div className='md:w-1/2 md:ml-20 space-y-4'>
-          <h1 className='font-bebas leading-[57px] font-normal text-[57px] text-white md:text-[101px] md:leading-[90.90px]'>
+        <motion.div
+          className='md:w-1/2 md:ml-20 space-y-4'
+          variants={{
+            hidden: { x: -100, opacity: 0 },
+            visible: { x: 0, opacity: 1 },
+          }}
+          initial='hidden'
+          animate='visible'
+          transition={{
+            duration: 0.5,
+            staggerChildren: 0.2,
+          }}>
+          <motion.h1
+            variants={{
+              hidden: { x: -100, opacity: 0 },
+              visible: { x: 0, opacity: 1 },
+            }}
+            className='font-bebas leading-[57px] font-normal text-[57px] text-white md:text-[101px] md:leading-[90.90px]'>
             hi, i am <br />
             Sanjyot Satvi
-          </h1>
-          <p className='leading-relaxed font-manrope font-normal text-base text-neturalOffWhite md:text-lg md:leading-[27px]'>
+          </motion.h1>
+          <motion.p
+            variants={{
+              hidden: { x: -100, opacity: 0 },
+              visible: { x: 0, opacity: 1 },
+            }}
+            className='leading-relaxed font-manrope font-normal text-base text-neturalOffWhite md:text-lg md:leading-[27px]'>
             a Software Development Engineer currently pursuing Master's in
             Computer Science from CSUF, Fullerton , CA
-          </p>
-          <div className='flex items-center space-x-4'>
+          </motion.p>
+          <motion.div
+            variants={{
+              hidden: { x: -100, opacity: 0 },
+              visible: { x: 0, opacity: 1 },
+            }}
+            className='flex items-center space-x-4'>
             <a
               href='mailto:satvi.sanjyot@gmail.com'
               className='bg-primary uppercase text-black px-4 py-2 rounded-full font-semibold hover:bg-lime-400 transition flex items-center space-x-2'>
@@ -42,16 +70,20 @@ export default function Hero() {
                 className='h-6 w-6'
               />
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <div className='md:w-1/2 flex justify-center  mb-8 md:mb-0'>
-          <div className='mt-10 md:mt-0 w-[380px] h-[400px] md:w-80 md:h-[500px] lg:w-96 lg:h-[500px] overflow-hidden rounded-md shadow-lg'>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            className='mt-10 md:mt-0 w-[380px] h-[400px] md:w-80 md:h-[500px] lg:w-96 lg:h-[500px] overflow-hidden rounded-md shadow-lg'>
             <img
               src='/images/sanjyot-satvi.jpeg'
               alt='Sanjyot Satvi'
               className='w-full h-full object-cover'
             />
-          </div>
+          </motion.div>
         </div>
       </section>
       <div className='w-full h-[2px] border border-zinc-700'></div>
