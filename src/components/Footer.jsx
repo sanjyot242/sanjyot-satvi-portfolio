@@ -12,7 +12,7 @@ const Footer = () => {
             <img src='/images/email.svg' alt='email' className='h-6 w-6 ml-2' />
           </a>
           <a
-            href='https://drive.google.com/file/d/1-z9ARFfpjDtOP8tCn8pTVbL3GE4NbX9W/view?usp=sharing'
+            href='https://drive.google.com/file/d/115C1BV95Ig7GBVs9oIJDlK8MeZ7orVLV/view?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
             className='flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 hover:bg-primary transition duration-300'>
