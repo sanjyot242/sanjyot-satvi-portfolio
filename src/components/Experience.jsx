@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 
 const experiences = [
   {
-    role: 'Consultant-System Management',
+    role: 'Software Engineer',
     company: 'LTIMindtree',
     logo: '/images/ltimindtree_logo.jpeg',
     duration: 'June 2021 - July 2023',
@@ -14,14 +14,13 @@ const experiences = [
     ],
   },
   {
-    role: 'Android Development Intern',
+    role: 'Software Development Intern',
     company: 'Eople Internet Pvt.Ltd',
     logo: '/images/eople_logo.jpeg',
     duration: 'March 2020 - October 2020',
     responsibilities: [
-      'Responsible for leading the Software Development Life Cycle (SDLC) for two robust, user-friendly Android applications, from initial concept to deployment',
-      'Served as the primary technical advisor for a management team of over 7 members, providing strategic guidance and technical expertise.Served as the primary technical advisor for a management team of over 7 members, providing strategic guidance and technical expertise.',
-      'Executed the platforms inaugural integrations with RazorPay, Google Maps, Firebase, and key third-party APIs, setting a solid foundation for advanced functionality and future user interactions',
+      'Achieved a 20% boost in React state management efficiency by integrating Redux and the Context API, further optimized by leveraging react-query caching for enhanced data handling.',
+      'Revamped search functionality with refined algorithms and Elasticsearch integration, resulting in a 40ms faster query responsetime and a 30% increase in user engagement',
     ],
   },
   // Add more experiences as needed
