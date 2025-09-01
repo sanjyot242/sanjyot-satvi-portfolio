@@ -12,7 +12,7 @@ const experiences = [
       'Designed and engineered a scalable, Java-based data migration platform that increased export speed by 10x and more than doubled import speed over the legacy pipeline.',
       'Owned the end-to-end development lifecycle, from requirements gathering and implementation to automated testing, while ensuring high code quality through rigorous code reviews and unit tests',
     ],
-  }
+  },
   {
     role: 'Software Engineer',
     company: 'LTIMindtree',
