@@ -6,7 +6,7 @@ const experiences = [
    {
     role: 'Software Engineer',
     company: 'KLA',
-    logo: '/images/kla.jpeg',
+    logo: '/images/kla.png',
     duration: 'May 2025 - August 2025',
     responsibilities: [
       'Designed and engineered a scalable, Java-based data migration platform that increased export speed by 10x and more than doubled import speed over the legacy pipeline.',
